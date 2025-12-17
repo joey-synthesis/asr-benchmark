@@ -12,6 +12,11 @@ from .performance import (
     get_audio_duration,
     measure_performance
 )
+from .gpu_metrics import (
+    GPUMonitor,
+    GPUSnapshot,
+    GPUMetricsSummary
+)
 
 __all__ = [
     'calculate_accuracy_metrics',
@@ -21,5 +26,8 @@ __all__ = [
     'PerformanceMetrics',
     'calculate_rtf',
     'get_audio_duration',
-    'measure_performance'
+    'measure_performance',
+    'GPUMonitor',
+    'GPUSnapshot',
+    'GPUMetricsSummary'
 ]

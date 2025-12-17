@@ -3,6 +3,7 @@
 import time
 import os
 import json
+from datetime import datetime
 from typing import List, Dict, Optional, Callable
 from dataclasses import dataclass
 from ..models.base import ASRModel
@@ -24,6 +25,10 @@ class EvaluationResult:
     rtf: Optional[float]
     status: str  # 'success' or 'error'
     error: Optional[str]
+    # GPU benchmarking metadata (backward compatible)
+    flash_attention: Optional[bool] = None
+    timestamp: Optional[str] = None
+    gpu_snapshot: Optional[Dict] = None
 
 
 class BatchEvaluator:
@@ -68,6 +73,9 @@ class BatchEvaluator:
             audio_duration = get_audio_duration(audio_path)
             rtf = calculate_rtf(processing_time, audio_duration)
 
+            # Extract Flash Attention setting from model (if available)
+            flash_attention = getattr(self.model, '_flash_attention', None)
+
             return EvaluationResult(
                 index=sample['index'],
                 audio_file=sample['audio_file'],
@@ -79,10 +87,15 @@ class BatchEvaluator:
                 processing_time=processing_time,
                 rtf=rtf,
                 status='success',
-                error=None
+                error=None,
+                flash_attention=flash_attention,
+                timestamp=datetime.now().isoformat()
             )
 
         except Exception as e:
+            # Extract Flash Attention setting from model (if available)
+            flash_attention = getattr(self.model, '_flash_attention', None)
+
             return EvaluationResult(
                 index=sample['index'],
                 audio_file=sample['audio_file'],
@@ -94,7 +107,9 @@ class BatchEvaluator:
                 processing_time=None,
                 rtf=None,
                 status='error',
-                error=str(e)
+                error=str(e),
+                flash_attention=flash_attention,
+                timestamp=datetime.now().isoformat()
             )
 
     def evaluate_dataset(
