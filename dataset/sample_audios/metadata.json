@@ -1,0 +1,82 @@
+[
+  {
+    "index": 0,
+    "audio_file": "audio_000.wav",
+    "transcript_file": "audio_000.txt",
+    "transcript": "これまたジミーさん",
+    "duration_seconds": 1.39,
+    "sample_rate": 16000
+  },
+  {
+    "index": 1,
+    "audio_file": "audio_001.wav",
+    "transcript_file": "audio_001.txt",
+    "transcript": "今も相手にロンバルドのほうに肩口で握られてもすぐさま流れを切る引き込み返しに変えたと。",
+    "duration_seconds": 7.65,
+    "sample_rate": 16000
+  },
+  {
+    "index": 2,
+    "audio_file": "audio_002.wav",
+    "transcript_file": "audio_002.txt",
+    "transcript": "僕はタクシーのことに関してはあんまりこう。",
+    "duration_seconds": 2.94,
+    "sample_rate": 16000
+  },
+  {
+    "index": 3,
+    "audio_file": "audio_003.wav",
+    "transcript_file": "audio_003.txt",
+    "transcript": "［バーミヤンズオンエア獲得も疑惑浮上］",
+    "duration_seconds": 4.78,
+    "sample_rate": 16000
+  },
+  {
+    "index": 4,
+    "audio_file": "audio_004.wav",
+    "transcript_file": "audio_004.txt",
+    "transcript": "そしてもう一枚がこちら。",
+    "duration_seconds": 4.63,
+    "sample_rate": 16000
+  },
+  {
+    "index": 5,
+    "audio_file": "audio_005.wav",
+    "transcript_file": "audio_005.txt",
+    "transcript": "何？",
+    "duration_seconds": 0.62,
+    "sample_rate": 16000
+  },
+  {
+    "index": 6,
+    "audio_file": "audio_006.wav",
+    "transcript_file": "audio_006.txt",
+    "transcript": "積極的にお金を使うべきだと主張する政治家や省庁と支出を抑えたい財務省との間でせめぎ合いが続きます。",
+    "duration_seconds": 8.15,
+    "sample_rate": 16000
+  },
+  {
+    "index": 7,
+    "audio_file": "audio_007.wav",
+    "transcript_file": "audio_007.txt",
+    "transcript": "今大会のボキの泳ぎ杉内さんはどう感じてらっしゃいますか？",
+    "duration_seconds": 5.26,
+    "sample_rate": 16000
+  },
+  {
+    "index": 8,
+    "audio_file": "audio_008.wav",
+    "transcript_file": "audio_008.txt",
+    "transcript": "そして得点を阻止するため相手はボールを発射！",
+    "duration_seconds": 6.12,
+    "sample_rate": 16000
+  },
+  {
+    "index": 9,
+    "audio_file": "audio_009.wav",
+    "transcript_file": "audio_009.txt",
+    "transcript": "やはりオウミ初の女性役員は夏目さんかな。",
+    "duration_seconds": 6.71,
+    "sample_rate": 16000
+  }
+]

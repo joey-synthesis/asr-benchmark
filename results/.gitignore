@@ -1,0 +1,7 @@
+# Ignore all result files
+*.json
+*.csv
+*.txt
+
+# But track the README
+!README.md
